@@ -4,10 +4,10 @@ from bs4 import BeautifulSoup
 def test():
     print("webtoondl loaded correctly!")
 
-def webtoonDL():
+def webtoonDL(url):
     pageId = 1
     epLinks = []
-    epLinks_list = ["1"]
+    epLinks_list = None
     while not(epLinks == epLinks_list):
         urlpage = url + "&page=" + str(pageId)
         print(pageId)
